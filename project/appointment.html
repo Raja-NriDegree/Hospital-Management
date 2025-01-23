@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Scheduler</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("https://tse2.mm.bing.net/th?id=OIP.qIypzNudmVhGSFbq49DUVwHaE0&pid=Api&P=0&h=180");background-size:cover; background-repeat: no-repeat; background-position: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"], input[type="email"], select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Book ur appointment</h1> 
+        <nav>
+          <ul>
+            <li><a href="./home.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./appointment.html">Appointement</a></li>
+            <li><a href="./Register.html">Register</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+
+<div class="container">
+    <h2>Doctor Appointment Scheduler</h2>
+    <form action="submit_appointment.php" method="post">
+        <label for="patientName">Patient Name:</label>
+        <input type="text" id="patientName" name="patientName" required>
+
+        <label for="patient id">patient id:</label>
+        <input type="email" id="patient id" name="patient id" required>
+
+        <label for="doctor">Select Doctor:</label>
+        <select id="doctor" name="doctor" required>
+            <option value="V.Hemanth Kumar">V.Hemanth Kumar</option>
+            <option value="A.Raja Sekhar Reddy">A.Raja Sekhar Reddy</option>
+            <option value="K.Vinay Kumar">K.Vinay Kumar</option>
+            <!-- Add more doctors as needed -->
+        </select>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="time">Preferred Time:</label>
+        <input type="time" id="time" name="time" required>
+
+        <input type="submit" value="Submit Appointment">
+    </form>
+</div>
+
+</body>
+</html>

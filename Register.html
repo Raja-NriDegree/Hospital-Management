@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Registration Form</title> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image :url("https://tse2.mm.bing.net/th?id=OIP.qIypzNudmVhGSFbq49DUVwHaE0&pid=Api&P=0&h=180"); background-size:cover; background-repeat: no-repeat; background-position: center;
+        }
+        form {
+            background-color: #b2b2b2;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input[type="text"], input[type="email"], input[type="date"], select, textarea {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        a{
+            text-decoration: none;
+        }
+
+        label {
+            font-weight: bold;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .row .col {
+            width: calc(50% - 10px);
+        }
+
+        label {
+            font-weight: bold;
+        }
+        .row {
+            display: flex;
+            justify-content: space-between;
+        }
+        .row .col {
+            width: calc(50% - 10px);
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post">
+        <h2>Hospital Registration Form</h2>
+        <div class="row">
+            <div class="col">
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" required>
+            </div>
+            <div class="col">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="col">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select Gender</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+        </div>
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" rows="4" required></textarea>
+
+        <div class="row">
+            <div class="col">
+                <label for="phone">Phone Number:</label>
+                <input type="text" id="phone" name="phone" required>
+            </div>
+            <div class="col">
+                <label for="bloodtype">Blood Type:</label>
+                <input type="text" id="bloodtype" name="bloodtype" required>
+            </div>
+            </div>
+        </div>
+
+        <button>
+            <a href="./login.html">Submit</a>
+        </button>
+    </href></a>
+    
+    </form>
+</body>
+</html>
